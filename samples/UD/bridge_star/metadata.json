@@ -1,0 +1,11 @@
+{
+  "dataset": "UD",
+  "structure": "bridge_star",
+  "num_qa": 8304,
+  "num_unique_answers": 3221,
+  "num_evidence_files": 18360,
+  "num_graphml": 9180,
+  "num_txt": 9180,
+  "query_file": "queries/queries.csv",
+  "evidence_directory": "evidence"
+}

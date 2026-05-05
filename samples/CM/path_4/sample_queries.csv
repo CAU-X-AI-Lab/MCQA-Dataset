@@ -1,0 +1,21 @@
+﻿id,dataset,domain,structure,query,answer,evidence_graphml,evidence_text,source_file
+CM_path_4_000001,CM,medicine,path_4,对于nCTD–OP患者出现咳痰的情况，通常会考虑哪项检查来找出病因，如大肠埃希菌？,痰培养,batch_000/path_4_00001.graphml,batch_000/path_4_00001.txt,output_queries_part_1.csv
+CM_path_4_000002,CM,medicine,path_4,在影像学检查中，软组织肿块的MRI结果通常会提示哪种后角肥大型的表现？,盘状半月板,batch_000/path_4_00002.graphml,batch_000/path_4_00002.txt,output_queries_part_1.csv
+CM_path_4_000003,CM,medicine,path_4,在严重外伤合并ARDS的情况下，建立人工气道后，通常需要更新观念来进行哪种辅助治疗？,循证护理,batch_000/path_4_00003.graphml,batch_000/path_4_00003.txt,output_queries_part_1.csv
+CM_path_4_000004,CM,medicine,path_4,在治疗恶性结时，使用奥沙利铂后通常会考虑哪种药物治疗，特别是在接下来使用参麦注射液腹腔注射的情况下？,神经节苷脂,batch_000/path_4_00004.graphml,batch_000/path_4_00004.txt,output_queries_part_1.csv
+CM_path_4_000005,CM,medicine,path_4,对于减少性紫癜的患者，通常会考虑哪种手术治疗方案，尤其是在进行脾切除或部分脾切除术后？,贲门周围血管离断术,batch_000/path_4_00005.graphml,batch_000/path_4_00005.txt,output_queries_part_1.csv
+CM_path_4_000006,CM,medicine,path_4,在椎动脉起始部重度狭窄的情况下，支架置入后通常需要进行哪项实验室检查来进一步评估抗血清的情况？,免疫组织化学分析,batch_000/path_4_00006.graphml,batch_000/path_4_00006.txt,output_queries_part_1.csv
+CM_path_4_000007,CM,medicine,path_4,阑尾黏液性囊肿通常会考虑进行超声造影检查，之后如果出现不均匀强化的表现，更符合哪项检查？,增强CT,batch_000/path_4_00007.graphml,batch_000/path_4_00007.txt,output_queries_part_1.csv
+CM_path_4_000008,CM,medicine,path_4,对于 n2D-STI 患者，进行二尖瓣成形术后，通常会考虑哪个影像学检查来评估阈值伪像？,三维超声,batch_000/path_4_00008.graphml,batch_000/path_4_00008.txt,output_queries_part_1.csv
+CM_path_4_000009,CM,medicine,path_4,在消化道腺瘤的病例中，进行结肠镜检查后，通常会考虑使用哪种药物治疗？,硫酸镁,batch_000/path_4_00009.graphml,batch_000/path_4_00009.txt,output_queries_part_1.csv
+CM_path_4_000010,CM,medicine,path_4,在热带海区海难中，经历应激后，通常会考虑哪项实验室检查来评估S-100蛋白的变化？,免疫组织化学,batch_000/path_4_00010.graphml,batch_000/path_4_00010.txt,output_queries_part_1.csv
+CM_path_4_000011,CM,medicine,path_4,在评估十二指肠瘢痕狭窄时，球囊扩张后通常需要进行哪项检查以进一步确认血生化检查的结果？,冠脉造影,batch_000/path_4_00011.graphml,batch_000/path_4_00011.txt,output_queries_part_1.csv
+CM_path_4_000012,CM,medicine,path_4,在大鼠股骨干骨折的灌胃治疗后，通常会考虑哪项实验室检查与血肌酐相关？,尿素氮,batch_000/path_4_00012.graphml,batch_000/path_4_00012.txt,output_queries_part_1.csv
+CM_path_4_000013,CM,medicine,path_4,在进行充分的术前准备后，针对PPI引起的高度房室传导阻滞，通常会考虑哪种手术治疗？,支架置入术,batch_000/path_4_00013.graphml,batch_000/path_4_00013.txt,output_queries_part_1.csv
+CM_path_4_000014,CM,medicine,path_4,脊髓组织病理损害通常会进行免疫组织化学检查，结果显示CD11755.6%的情况下，应该考虑哪项检查？,EMA,batch_000/path_4_00014.graphml,batch_000/path_4_00014.txt,output_queries_part_1.csv
+CM_path_4_000015,CM,medicine,path_4,在治疗视幻觉时，使用普拉克索后如果出现恶心，通常会考虑哪种药物治疗？,氟西汀,batch_000/path_4_00015.graphml,batch_000/path_4_00015.txt,output_queries_part_1.csv
+CM_path_4_000016,CM,medicine,path_4,对于慢喉痹患者，接受针刺治疗后，出现切口感染的情况，通常会考虑哪种手术治疗？,腹腔镜手术,batch_000/path_4_00016.graphml,batch_000/path_4_00016.txt,output_queries_part_1.csv
+CM_path_4_000017,CM,medicine,path_4,对于多聚谷氨酰胺病引起的中枢神经系统退行性疾病，通常会考虑使用哪种药物治疗，如IFN-α2b？,干扰素,batch_000/path_4_00017.graphml,batch_000/path_4_00017.txt,output_queries_part_1.csv
+CM_path_4_000018,CM,medicine,path_4,在治疗IK疾病时，使用布比卡因后通常会考虑使用哪种药物，接下来又会用到利福平？,肾上腺素,batch_000/path_4_00018.graphml,batch_000/path_4_00018.txt,output_queries_part_1.csv
+CM_path_4_000019,CM,medicine,path_4,在治疗膜新生血管出血时，进行玻璃体切割术后，通常会考虑哪种辅助治疗方法，尤其是与自我导向学习方法相关的？,循证护理,batch_000/path_4_00019.graphml,batch_000/path_4_00019.txt,output_queries_part_1.csv
+CM_path_4_000020,CM,medicine,path_4,在小胶质细胞损伤的情况下，药物治疗中使用谷氨酸后，通常会考虑使用吗啡治疗，这种情况下更符合哪种病理分型？,代谢型,batch_000/path_4_00020.graphml,batch_000/path_4_00020.txt,output_queries_part_1.csv

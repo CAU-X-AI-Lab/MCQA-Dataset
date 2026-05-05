@@ -1,0 +1,11 @@
+{
+  "dataset": "UD",
+  "structure": "cycle",
+  "num_qa": 142,
+  "num_unique_answers": 142,
+  "num_evidence_files": 284,
+  "num_graphml": 142,
+  "num_txt": 142,
+  "query_file": "queries/queries.csv",
+  "evidence_directory": "evidence"
+}

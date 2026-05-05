@@ -1,0 +1,11 @@
+{
+  "dataset": "FB",
+  "structure": "bridge_star",
+  "num_qa": 172000,
+  "num_unique_answers": 8964,
+  "num_evidence_files": 172000,
+  "num_graphml": 86000,
+  "num_txt": 86000,
+  "query_file": "queries/queries.csv",
+  "evidence_directory": "evidence"
+}

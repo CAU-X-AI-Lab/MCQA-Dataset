@@ -1,0 +1,21 @@
+﻿id,dataset,domain,structure,query,answer,evidence_graphml,evidence_text,source_file
+FB_single_edge_000001,FB,freebase,single_edge,Which country contains the University of Vienna?,Austria,batch_000/single_edge_00001.graphml,batch_000/single_edge_00001.txt,output_queries_part_1.csv
+FB_single_edge_000002,FB,freebase,single_edge,Which place contains Tonga?,Oceania,batch_000/single_edge_00002.graphml,batch_000/single_edge_00002.txt,output_queries_part_1.csv
+FB_single_edge_000003,FB,freebase,single_edge,"What country contains City University, London?",England,batch_000/single_edge_00003.graphml,batch_000/single_edge_00003.txt,output_queries_part_1.csv
+FB_single_edge_000004,FB,freebase,single_edge,Which country contains Wayne State University?,United States of America,batch_000/single_edge_00004.graphml,batch_000/single_edge_00004.txt,output_queries_part_1.csv
+FB_single_edge_000005,FB,freebase,single_edge,Which place contains the University of Otago?,New Zealand,batch_000/single_edge_00005.graphml,batch_000/single_edge_00005.txt,output_queries_part_1.csv
+FB_single_edge_000006,FB,freebase,single_edge,Which county contains Ypsilanti?,Washtenaw County,batch_000/single_edge_00006.graphml,batch_000/single_edge_00006.txt,output_queries_part_1.csv
+FB_single_edge_000007,FB,freebase,single_edge,Which state contains Wilmington?,North Carolina,batch_000/single_edge_00007.graphml,batch_000/single_edge_00007.txt,output_queries_part_1.csv
+FB_single_edge_000008,FB,freebase,single_edge,Which state contains Macon?,Georgia,batch_000/single_edge_00008.graphml,batch_000/single_edge_00008.txt,output_queries_part_1.csv
+FB_single_edge_000009,FB,freebase,single_edge,Which country contains Gelderland?,Netherlands,batch_000/single_edge_00009.graphml,batch_000/single_edge_00009.txt,output_queries_part_1.csv
+FB_single_edge_000010,FB,freebase,single_edge,Which continent contains Kuwait?,Asia,batch_000/single_edge_00010.graphml,batch_000/single_edge_00010.txt,output_queries_part_1.csv
+FB_single_edge_000011,FB,freebase,single_edge,Which place contains Allentown?,Pennsylvania,batch_000/single_edge_00011.graphml,batch_000/single_edge_00011.txt,output_queries_part_1.csv
+FB_single_edge_000012,FB,freebase,single_edge,Which place contains Troy?,New York,batch_000/single_edge_00012.graphml,batch_000/single_edge_00012.txt,output_queries_part_1.csv
+FB_single_edge_000013,FB,freebase,single_edge,Which place contains Reed College?,Portland,batch_000/single_edge_00013.graphml,batch_000/single_edge_00013.txt,output_queries_part_1.csv
+FB_single_edge_000014,FB,freebase,single_edge,Which state contains Butte County?,California,batch_000/single_edge_00014.graphml,batch_000/single_edge_00014.txt,output_queries_part_1.csv
+FB_single_edge_000015,FB,freebase,single_edge,In which state is Roosevelt University located?,Illinois,batch_000/single_edge_00015.graphml,batch_000/single_edge_00015.txt,output_queries_part_1.csv
+FB_single_edge_000016,FB,freebase,single_edge,Which country contains Royal College?,Sri Lanka,batch_000/single_edge_00016.graphml,batch_000/single_edge_00016.txt,output_queries_part_1.csv
+FB_single_edge_000017,FB,freebase,single_edge,Which country contains Henan?,China,batch_000/single_edge_00017.graphml,batch_000/single_edge_00017.txt,output_queries_part_1.csv
+FB_single_edge_000018,FB,freebase,single_edge,Which state contains Greenwich?,Connecticut,batch_000/single_edge_00018.graphml,batch_000/single_edge_00018.txt,output_queries_part_1.csv
+FB_single_edge_000019,FB,freebase,single_edge,Which continent contains Gambia?,Africa,batch_000/single_edge_00019.graphml,batch_000/single_edge_00019.txt,output_queries_part_1.csv
+FB_single_edge_000020,FB,freebase,single_edge,Which county contains Prescott?,Yavapai County,batch_000/single_edge_00020.graphml,batch_000/single_edge_00020.txt,output_queries_part_1.csv

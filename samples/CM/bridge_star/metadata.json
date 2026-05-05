@@ -1,0 +1,11 @@
+{
+  "dataset": "CM",
+  "structure": "bridge_star",
+  "num_qa": 90000,
+  "num_unique_answers": 16867,
+  "num_evidence_files": 60000,
+  "num_graphml": 30000,
+  "num_txt": 30000,
+  "query_file": "queries/queries.csv",
+  "evidence_directory": "evidence"
+}

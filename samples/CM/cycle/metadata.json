@@ -1,0 +1,11 @@
+{
+  "dataset": "CM",
+  "structure": "cycle",
+  "num_qa": 777,
+  "num_unique_answers": 273,
+  "num_evidence_files": 777,
+  "num_graphml": 777,
+  "num_txt": 0,
+  "query_file": "queries/queries.csv",
+  "evidence_directory": "evidence"
+}

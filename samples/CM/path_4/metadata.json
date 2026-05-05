@@ -1,0 +1,11 @@
+{
+  "dataset": "CM",
+  "structure": "path_4",
+  "num_qa": 1000,
+  "num_unique_answers": 627,
+  "num_evidence_files": 1000,
+  "num_graphml": 1000,
+  "num_txt": 0,
+  "query_file": "queries/queries.csv",
+  "evidence_directory": "evidence"
+}

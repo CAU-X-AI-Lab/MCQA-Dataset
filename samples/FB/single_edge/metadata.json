@@ -1,0 +1,11 @@
+{
+  "dataset": "FB",
+  "structure": "single_edge",
+  "num_qa": 972,
+  "num_unique_answers": 972,
+  "num_evidence_files": 1944,
+  "num_graphml": 972,
+  "num_txt": 972,
+  "query_file": "queries/queries.csv",
+  "evidence_directory": "evidence"
+}

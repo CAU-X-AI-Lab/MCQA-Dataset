@@ -1,0 +1,21 @@
+﻿id,dataset,domain,structure,query,answer,evidence_graphml,evidence_text,source_file
+CM_single_edge_000001,CM,medicine,single_edge,在出现小肠出血的情况下，通常会考虑进行哪种影像学检查？,多层螺旋CT诊断,batch_000/single_edge_00001.graphml,batch_000/single_edge_00001.txt,output_queries_part_1.csv
+CM_single_edge_000002,CM,medicine,single_edge,当发现胎儿结构异常时，通常会考虑进行哪项检查？,阴道三维超声检查,batch_000/single_edge_00002.graphml,batch_000/single_edge_00002.txt,output_queries_part_1.csv
+CM_single_edge_000003,CM,medicine,single_edge,如果患者被诊断为蛛网膜囊肿，通常需要进行哪种影像学检查？,常规MRI,batch_000/single_edge_00003.graphml,batch_000/single_edge_00003.txt,output_queries_part_1.csv
+CM_single_edge_000004,CM,medicine,single_edge,鼻咽癌患者通常需要进行哪项检查？,脑电图检查,batch_000/single_edge_00004.graphml,batch_000/single_edge_00004.txt,output_queries_part_1.csv
+CM_single_edge_000005,CM,medicine,single_edge,如果怀疑患者患有肝未分化胚胎性肉瘤，通常会考虑进行哪项影像学检查？,螺旋CT,batch_000/single_edge_00005.graphml,batch_000/single_edge_00005.txt,output_queries_part_1.csv
+CM_single_edge_000006,CM,medicine,single_edge,如果怀疑有脑动脉闭塞，通常会考虑哪项影像学检查？,彩色多普勒超声,batch_000/single_edge_00006.graphml,batch_000/single_edge_00006.txt,output_queries_part_1.csv
+CM_single_edge_000007,CM,medicine,single_edge,对于ASC疾病，最常用的影像学检查是什么？,超声检测,batch_000/single_edge_00007.graphml,batch_000/single_edge_00007.txt,output_queries_part_1.csv
+CM_single_edge_000008,CM,medicine,single_edge,在诊断脑脓肿时，通常会考虑哪项影像学检查？,螺旋CT,batch_000/single_edge_00008.graphml,batch_000/single_edge_00008.txt,output_queries_part_1.csv
+CM_single_edge_000009,CM,medicine,single_edge,在评估心外膜脂肪组织时，通常会考虑哪项影像学检查？,超声,batch_000/single_edge_00009.graphml,batch_000/single_edge_00009.txt,output_queries_part_1.csv
+CM_single_edge_000010,CM,medicine,single_edge,对于先天性胆脂瘤，通常会考虑哪项影像学检查？,颞骨高分辨CT,batch_000/single_edge_00010.graphml,batch_000/single_edge_00010.txt,output_queries_part_1.csv
+CM_single_edge_000011,CM,medicine,single_edge,在评估肺部病变时，通常需要进行哪种检查？,肺部CT检查,batch_000/single_edge_00011.graphml,batch_000/single_edge_00011.txt,output_queries_part_1.csv
+CM_single_edge_000012,CM,medicine,single_edge,对于腰椎间盘突出，通常会考虑哪项影像学检查？,CT观察,batch_000/single_edge_00012.graphml,batch_000/single_edge_00012.txt,output_queries_part_1.csv
+CM_single_edge_000013,CM,medicine,single_edge,对于Ⅲ度损伤，通常会考虑哪项影像学检查？,CT,batch_000/single_edge_00013.graphml,batch_000/single_edge_00013.txt,output_queries_part_1.csv
+CM_single_edge_000014,CM,medicine,single_edge,在诊断支气管异物时，通常会采用哪种影像学检查技术？,多层螺旋CT三维重建技术,batch_000/single_edge_00014.graphml,batch_000/single_edge_00014.txt,output_queries_part_1.csv
+CM_single_edge_000015,CM,medicine,single_edge,对于肺尘埃沉着病，通常会考虑进行哪项检查？,X线平片检查,batch_000/single_edge_00015.graphml,batch_000/single_edge_00015.txt,output_queries_part_1.csv
+CM_single_edge_000016,CM,medicine,single_edge,对于颅内动静脉畸形，通常会考虑哪项影像学检查？,频谱多普勒,batch_000/single_edge_00016.graphml,batch_000/single_edge_00016.txt,output_queries_part_1.csv
+CM_single_edge_000017,CM,medicine,single_edge,对于肾动脉重度狭窄，通常会考虑哪项影像学检查？,彩色多普勒血流显像,batch_000/single_edge_00017.graphml,batch_000/single_edge_00017.txt,output_queries_part_1.csv
+CM_single_edge_000018,CM,medicine,single_edge,对于胃肠实热型AP，通常会考虑使用哪项影像学检查？,CT,batch_000/single_edge_00018.graphml,batch_000/single_edge_00018.txt,output_queries_part_1.csv
+CM_single_edge_000019,CM,medicine,single_edge,如果患者出现蜘蛛膜下腔出血，通常会考虑哪项影像学检查？,颅内动脉的成像扫描,batch_000/single_edge_00019.graphml,batch_000/single_edge_00019.txt,output_queries_part_1.csv
+CM_single_edge_000020,CM,medicine,single_edge,在进行Child-Push A级的影像学检查时，通常会考虑哪项检查？,CT扫描,batch_000/single_edge_00020.graphml,batch_000/single_edge_00020.txt,output_queries_part_1.csv

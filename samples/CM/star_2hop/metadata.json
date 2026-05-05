@@ -1,0 +1,11 @@
+{
+  "dataset": "CM",
+  "structure": "star_2hop",
+  "num_qa": 94,
+  "num_unique_answers": 94,
+  "num_evidence_files": 94,
+  "num_graphml": 94,
+  "num_txt": 0,
+  "query_file": "queries/queries.csv",
+  "evidence_directory": "evidence"
+}

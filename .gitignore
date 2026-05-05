@@ -1,0 +1,9 @@
+# Full data should be distributed via Releases, not committed here.
+data/
+archives/
+*.zip
+
+# Local runtime files
+__pycache__/
+*.pyc
+*.log

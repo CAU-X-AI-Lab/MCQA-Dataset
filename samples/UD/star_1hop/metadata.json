@@ -1,0 +1,11 @@
+{
+  "dataset": "UD",
+  "structure": "star_1hop",
+  "num_qa": 1000,
+  "num_unique_answers": 1000,
+  "num_evidence_files": 2000,
+  "num_graphml": 1000,
+  "num_txt": 1000,
+  "query_file": "queries/queries.csv",
+  "evidence_directory": "evidence"
+}
