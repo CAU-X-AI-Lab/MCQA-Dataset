@@ -86,6 +86,3 @@ id,dataset,domain,structure,query,answer,evidence_graphml,evidence_text,source_f
 
 See [docs/schema.md](docs/schema.md) for details.
 
-## Citation
-
-If you use MCQA, please cite the accompanying paper.
