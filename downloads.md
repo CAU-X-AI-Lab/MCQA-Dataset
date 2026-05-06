@@ -20,7 +20,12 @@ v1.0.0
 Suggested GitHub Release asset URLs after upload:
 
 ```text
-https://github.com/<USER_OR_ORG>/MCQA-Dataset/releases/download/v1.0.0/mcqa-cm.zip
-https://github.com/<USER_OR_ORG>/MCQA-Dataset/releases/download/v1.0.0/mcqa-fb.zip
-https://github.com/<USER_OR_ORG>/MCQA-Dataset/releases/download/v1.0.0/mcqa-ud.zip
+https://github.com/CAU-X-AI-Lab/MCQA-Dataset/releases/download/v1.0.0/mcqa-cm.zip
+https://github.com/CAU-X-AI-Lab/MCQA-Dataset/releases/download/v1.0.0/mcqa-fb.zip
+https://github.com/CAU-X-AI-Lab/MCQA-Dataset/releases/download/v1.0.0/mcqa-ud.zip
 ```
+## Resource Data
+
+The source resource data used for query construction is available from GitHub Releases:
+
+- [MCQA Resource Data v1](https://github.com/CAU-X-AI-Lab/MCQA/releases/tag/resource-data-v1)
