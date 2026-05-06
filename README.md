@@ -19,17 +19,24 @@ MCQA is designed around three goals:
 
 The main construction pattern is **Bridge Star**, which creates ambiguity among same-type candidate entities through shared bridge nodes and then resolves the answer with target-specific constraints.
 
-![Bridge-star structure](docs/assets/bridge_star_example.png)
+<p align="center">
+  <img src="docs/assets/bridge_star_example.png" alt="Multi-constraint QA example" width="550">
+</p>
 
 MCQA also includes five additional graph structures to test different forms of relational and compositional reasoning.
 
-![MCQA graph structures](docs/assets/mcqa_structure_examples.png)
+<p align="center">
+  <img src="docs/assets/mcqa_structure_examples.png" alt="Multi-constraint QA example" width="650">
+</p>
 
 ## Dataset Overview
 
 The complete release contains **283,289 QA pairs**, **138,165 GraphML evidence files**, and **134,294 text evidence files** across medical, Freebase-style, and open-domain sources.
 
-![MCQA domain distribution](docs/assets/mcqa_domain_distribution.png)
+<p align="center">
+  <img src="docs/assets/mcqa_domain_distribution.png" alt="Multi-constraint QA example" width="650">
+</p>
+
 
 | Dataset | Bridge-Star QA | Multi-Structure QA | Total QA | Total GraphML | Total TXT |
 |---|---:|---:|---:|---:|---:|
