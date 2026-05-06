@@ -1,12 +1,32 @@
 # MCQA-Dataset
 
-MCQA is a structure-grounded benchmark for evaluating retrieval-augmented generation under multi-constraint question answering.
+MCQA is a structure-grounded benchmark for evaluating retrieval-augmented generation (RAG) under **multi-constraint question answering**.
 
-This repository is the lightweight GitHub entry point for MCQA. It contains documentation, statistics, generation scripts, and small query samples. The full dataset is distributed as compressed archives through GitHub Releases.
+Current QA and RAG benchmarks often evaluate whether a system can retrieve generally relevant evidence or produce a correct final answer. In many real scenarios, however, a question is only answerable when **all explicit constraints are satisfied at the same time**. A system that satisfies only part of the constraints may still produce a plausible but wrong answer. MCQA is built to expose this failure mode by pairing every query with compact, verifiable evidence graphs and standard answers.
 
-## Full Dataset
+![Multi-constraint QA example](docs/assets/mcqa_constraint_example.png)
 
-The complete release contains **283,289 QA pairs**, **138,165 GraphML evidence files**, and **134,294 text evidence files**.
+## Why MCQA?
+
+MCQA is designed around three goals:
+
+1. **Constraint-level evaluation.** Each query contains multiple explicit semantic constraints, and the answer is valid only if all constraints are satisfied.
+2. **Structure-grounded construction.** Queries are generated from knowledge-graph substructures, so every constraint can be traced back to structured evidence.
+3. **Verifiable evidence.** Each sample is paired with GraphML evidence, and when available, textual evidence, enabling retrieval, answer generation, and explanation consistency checks.
+
+The main construction pattern is **Bridge Star**, which creates ambiguity among same-type candidate entities through shared bridge nodes and then resolves the answer with target-specific constraints.
+
+![Bridge-star structure](docs/assets/bridge_star_example.png)
+
+MCQA also includes five additional graph structures to test different forms of relational and compositional reasoning.
+
+![MCQA graph structures](docs/assets/mcqa_structure_examples.png)
+
+## Dataset Overview
+
+The complete release contains **283,289 QA pairs**, **138,165 GraphML evidence files**, and **134,294 text evidence files** across medical, Freebase-style, and open-domain sources.
+
+![MCQA domain distribution](docs/assets/mcqa_domain_distribution.png)
 
 | Dataset | Bridge-Star QA | Multi-Structure QA | Total QA | Total GraphML | Total TXT |
 |---|---:|---:|---:|---:|---:|
@@ -17,18 +37,20 @@ The complete release contains **283,289 QA pairs**, **138,165 GraphML evidence f
 
 ## Structural Subsets
 
-MCQA contains the original bridge-star structure plus five additional graph structures.
+MCQA contains the original `bridge_star` structure plus five additional graph structures.
 
-| Structure | QA Pairs |
-|---|---:|
-| `bridge_star` | 270,304 |
-| `single_edge` | 2,972 |
-| `path_4` | 3,000 |
-| `star_1hop` | 3,000 |
-| `star_2hop` | 2,094 |
-| `cycle` | 1,919 |
+| Structure | QA Pairs | Target Node | Main Ability |
+|---|---:|---|---|
+| `bridge_star` | 270,304 | Core node | Ambiguity-aware multi-constraint reasoning |
+| `single_edge` | 2,972 | Endpoint | Atomic factual retrieval |
+| `path_4` | 3,000 | Internal/path node | Ordered relational dependency |
+| `star_1hop` | 3,000 | Center node | Parallel constraint matching |
+| `star_2hop` | 2,094 | Center node | Hierarchical constraint matching |
+| `cycle` | 1,919 | Missing cycle node | Closure consistency |
 
 ## Repository Layout
+
+This repository is the lightweight GitHub entry point for MCQA. It contains documentation, statistics, generation scripts, and small query samples. The full dataset is distributed as compressed archives through GitHub Releases.
 
 ```text
 README.md
@@ -36,6 +58,7 @@ dataset_card.md
 downloads.md
 docs/
   schema.md
+  assets/
 statistics/
   overall_statistics.csv
   structure_statistics.csv
@@ -76,13 +99,51 @@ Download the full dataset from the GitHub Release assets:
 
 After downloading, unzip the archives into the repository root or another data directory. Each archive contains paths under `MCQA-Dataset/data/<DATASET>/`.
 
-## Query Schema
+```powershell
+Expand-Archive mcqa-cm.zip -DestinationPath .
+Expand-Archive mcqa-fb.zip -DestinationPath .
+Expand-Archive mcqa-ud.zip -DestinationPath .
+```
 
-All normalized `queries.csv` files use:
+## How to Use
+
+Each normalized `queries.csv` row links a natural-language query to its gold answer and evidence files.
 
 ```csv
 id,dataset,domain,structure,query,answer,evidence_graphml,evidence_text,source_file
 ```
 
-See [docs/schema.md](docs/schema.md) for details.
+Typical usage:
+
+1. Load `queries/queries.csv`.
+2. Read the query and candidate answer from `query` and `answer`.
+3. Use `evidence_graphml` to load the structured evidence graph for constraint-level retrieval or verification.
+4. Use `evidence_text` when a textual evidence paragraph is available.
+5. Evaluate whether a model answer satisfies all query constraints, not only whether it is semantically close to the gold answer.
+
+Minimal Python example:
+
+```python
+import csv
+from pathlib import Path
+
+root = Path("MCQA-Dataset/data/CM")
+query_file = root / "queries" / "queries.csv"
+
+with query_file.open("r", encoding="utf-8-sig", newline="") as f:
+    reader = csv.DictReader(f)
+    row = next(reader)
+
+print(row["query"])
+print(row["answer"])
+print(root / row["evidence_graphml"])
+```
+
+See [docs/schema.md](docs/schema.md) for field-level details.
+
+## Source Resource Data
+
+The source resource data used to construct MCQA queries is distributed separately through GitHub Releases. It contains the raw or processed source materials used for query construction, including CM triples, FB nodes and edges, and UD domain texts.
+
+Do not commit the full resource data directly to Git. Some files exceed GitHub's ordinary file-size limit and should be released as compressed assets.
 

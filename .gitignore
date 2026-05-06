@@ -2,6 +2,7 @@
 data/
 archives/
 *.zip
+Resource Data/
 
 # Local runtime files
 __pycache__/
