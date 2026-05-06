@@ -1,0 +1,138 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "sc": "https://schema.org/",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dct": "http://purl.org/dc/terms/",
+    "conformsTo": "dct:conformsTo",
+    "distribution": "sc:distribution",
+    "recordSet": "cr:recordSet",
+    "field": "cr:field",
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "source": "cr:source"
+  },
+  "@type": "sc:Dataset",
+  "name": "MCQA-Dataset",
+  "description": "MCQA is a structure-grounded benchmark for evaluating retrieval-augmented generation under multi-constraint question answering. The release contains 283,289 QA pairs, 138,165 GraphML evidence files, and 134,294 text evidence files across CM, FB, and UD sources.",
+  "url": "https://anonymous.4open.science/r/MCQA-Dataset-FB53",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "conformsTo": "http://mlcommons.org/croissant/1.1",
+  "keywords": [
+    "question answering",
+    "retrieval-augmented generation",
+    "multi-constraint reasoning",
+    "knowledge graphs",
+    "GraphML"
+  ],
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "mcqa-cm-archive",
+      "name": "mcqa-cm.zip",
+      "description": "Compressed CM subset containing normalized query CSV files, GraphML evidence, text evidence where available, and subset metadata.",
+      "contentUrl": "https://github.com/CAU-X-AI-Lab/MCQA/releases/download/v1.0.0/mcqa-cm.zip",
+      "encodingFormat": "application/zip",
+      "contentSize": "66.97 MB"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "mcqa-fb-archive",
+      "name": "mcqa-fb.zip",
+      "description": "Compressed FB subset containing normalized query CSV files, GraphML evidence, text evidence, and subset metadata.",
+      "contentUrl": "https://github.com/CAU-X-AI-Lab/MCQA/releases/download/v1.0.0/mcqa-fb.zip",
+      "encodingFormat": "application/zip",
+      "contentSize": "162.87 MB"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "mcqa-ud-archive",
+      "name": "mcqa-ud.zip",
+      "description": "Compressed UD subset containing normalized query CSV files, GraphML evidence, text evidence, and subset metadata.",
+      "contentUrl": "https://github.com/CAU-X-AI-Lab/MCQA/releases/download/v1.0.0/mcqa-ud.zip",
+      "encodingFormat": "application/zip",
+      "contentSize": "95.54 MB"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "mcqa-query-records",
+      "name": "mcqa_queries",
+      "description": "Normalized query records stored in queries/queries.csv files across all MCQA subsets. Every row links a natural-language question to a gold answer and relative evidence paths.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "name": "id",
+          "description": "Stable sample identifier.",
+          "dataType": "sc:Text"
+        },
+        {
+          "@type": "cr:Field",
+          "name": "dataset",
+          "description": "Source subset identifier: CM, FB, or UD.",
+          "dataType": "sc:Text"
+        },
+        {
+          "@type": "cr:Field",
+          "name": "domain",
+          "description": "Domain label when available, such as medicine, freebase, psychology, or biography.",
+          "dataType": "sc:Text"
+        },
+        {
+          "@type": "cr:Field",
+          "name": "structure",
+          "description": "Graph structure type: bridge_star, single_edge, path_4, star_1hop, star_2hop, or cycle.",
+          "dataType": "sc:Text"
+        },
+        {
+          "@type": "cr:Field",
+          "name": "query",
+          "description": "Natural-language question.",
+          "dataType": "sc:Text"
+        },
+        {
+          "@type": "cr:Field",
+          "name": "answer",
+          "description": "Gold entity answer.",
+          "dataType": "sc:Text"
+        },
+        {
+          "@type": "cr:Field",
+          "name": "evidence_graphml",
+          "description": "Relative path or file name for the GraphML evidence associated with the query.",
+          "dataType": "sc:Text"
+        },
+        {
+          "@type": "cr:Field",
+          "name": "evidence_text",
+          "description": "Relative text evidence path when textual evidence is available.",
+          "dataType": "sc:Text"
+        },
+        {
+          "@type": "cr:Field",
+          "name": "source_file",
+          "description": "Original CSV file used to build the normalized row.",
+          "dataType": "sc:Text"
+        }
+      ]
+    }
+  ],
+  "rai:dataLimitations": "MCQA is designed for evaluating retrieval-augmented generation and multi-constraint question answering. It should not be treated as complete coverage of medical, Freebase-style, or open-domain knowledge. The benchmark emphasizes graph-structured constraints and compact evidence, so performance on MCQA may not directly transfer to open-ended QA, clinical decision making, or other high-stakes applications.",
+  "rai:dataBiases": "The dataset inherits coverage, selection, and representation biases from the CM, FB, and UD source materials. Query generation, graph-structure sampling, answer-diversity filtering, and evidence construction may also introduce distributional biases toward entities, relations, domains, and constraint patterns that are easier to sample or validate.",
+  "rai:personalSensitiveInformation": "MCQA is derived from structured and textual source resources and is not intended to include private personal information. Some records may mention public entities, people, medical concepts, or other sensitive domains inherited from the sources. Users should avoid using MCQA to make decisions about individuals or to provide medical, legal, or other professional advice.",
+  "rai:dataUseCases": "Intended uses include evaluation of retrieval-augmented generation, evidence-grounded question answering, multi-hop and multi-constraint reasoning, graph-based retrieval, and answer verification. The dataset is not intended for direct deployment in high-stakes decision systems, clinical guidance, factual truth adjudication, or demographic inference.",
+  "rai:dataSocialImpact": "MCQA can support more rigorous evaluation of whether language models satisfy all constraints in complex questions, which may improve reliability of evidence-grounded systems. Potential risks include overfitting to benchmark-specific graph patterns, reinforcing source-data biases, or misusing benchmark answers in domains such as medicine without expert validation.",
+  "rai:hasSyntheticData": true,
+  "prov:wasDerivedFrom": [
+    "CM source resources used to construct the medical-domain MCQA subset.",
+    "FB source resources used to construct the Freebase-style MCQA subset.",
+    "UD source resources used to construct the open-domain MCQA subset."
+  ],
+  "prov:wasGeneratedBy": "MCQA was generated by sampling graph structures from source resources, constructing GraphML evidence subgraphs, generating or rewriting natural-language questions, assigning gold answers, filtering for answer diversity and query quality, and normalizing all query files to the shared schema documented in docs/schema.md. The repository includes generation scripts under scripts/generation/."
+}

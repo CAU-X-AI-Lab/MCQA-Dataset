@@ -157,3 +157,9 @@ The source resource data used to construct MCQA queries is distributed separatel
 
 Do not commit the full resource data directly to Git. Some files exceed GitHub's ordinary file-size limit and should be released as compressed assets.
 
+## License
+
+MCQA-Dataset is released under the Creative Commons Attribution 4.0 International License (CC BY 4.0). See [LICENSE](LICENSE).
+
+MCQA is a derived benchmark built from CM, FB, and UD sources. Users are responsible for complying with the licenses and terms of the original source datasets.
+
