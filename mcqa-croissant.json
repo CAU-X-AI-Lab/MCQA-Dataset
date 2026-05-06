@@ -36,7 +36,7 @@
       "@id": "mcqa-cm-archive",
       "name": "mcqa-cm.zip",
       "description": "Compressed CM subset containing normalized query CSV files, GraphML evidence, text evidence where available, and subset metadata.",
-      "contentUrl": "https://github.com/CAU-X-AI-Lab/MCQA/releases/download/v1.0.0/mcqa-cm.zip",
+      "contentUrl": "https://github.com/CAU-X-AI-Lab/MCQA-Dataset/releases/download/v1.0.0/mcqa-cm.zip",
       "encodingFormat": "application/zip",
       "contentSize": "66.97 MB"
     },
@@ -45,7 +45,7 @@
       "@id": "mcqa-fb-archive",
       "name": "mcqa-fb.zip",
       "description": "Compressed FB subset containing normalized query CSV files, GraphML evidence, text evidence, and subset metadata.",
-      "contentUrl": "https://github.com/CAU-X-AI-Lab/MCQA/releases/download/v1.0.0/mcqa-fb.zip",
+      "contentUrl": "https://github.com/CAU-X-AI-Lab/MCQA-Dataset/releases/download/v1.0.0/mcqa-fb.zip",
       "encodingFormat": "application/zip",
       "contentSize": "162.87 MB"
     },
@@ -54,7 +54,7 @@
       "@id": "mcqa-ud-archive",
       "name": "mcqa-ud.zip",
       "description": "Compressed UD subset containing normalized query CSV files, GraphML evidence, text evidence, and subset metadata.",
-      "contentUrl": "https://github.com/CAU-X-AI-Lab/MCQA/releases/download/v1.0.0/mcqa-ud.zip",
+      "contentUrl": "https://github.com/CAU-X-AI-Lab/MCQA-Dataset/releases/download/v1.0.0/mcqa-ud.zip",
       "encodingFormat": "application/zip",
       "contentSize": "95.54 MB"
     }
