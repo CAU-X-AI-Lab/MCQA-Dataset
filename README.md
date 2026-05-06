@@ -4,7 +4,10 @@ MCQA is a structure-grounded benchmark for evaluating retrieval-augmented genera
 
 Current QA and RAG benchmarks often evaluate whether a system can retrieve generally relevant evidence or produce a correct final answer. In many real scenarios, however, a question is only answerable when **all explicit constraints are satisfied at the same time**. A system that satisfies only part of the constraints may still produce a plausible but wrong answer. MCQA is built to expose this failure mode by pairing every query with compact, verifiable evidence graphs and standard answers.
 
-![Multi-constraint QA example](docs/assets/mcqa_constraint_example.png)
+<p align="center">
+  <img src="docs/assets/mcqa_constraint_example.png" alt="Multi-constraint QA example" width="650">
+</p>
+
 
 ## Why MCQA?
 
